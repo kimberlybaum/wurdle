@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <!-- <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/> -->
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <script type="module" src="all.js"></script>
+    <!-- <script src="bundle.js"></script> -->
+
+    <title> Wurdle </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Odibee+Sans&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Wurdle</h1>
+
+    <div id="choice">
+        <p>I want to play wurdle with</p>
+        <form>
+            <select id="ddlViewBy">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected="selected">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+            </select>
+        </form>
+        <p>letters.</p>
+    </div>
+
+    <div>
+        <p id="incomplete" style="display:none">word incomplete</p>
+        <p id="invalid" style="display:none">not a valid word</p>
+    </div>
+
+    <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1 id="win_lose">You Won</h1>
+            <h2 id="reveal_word"></h2>
+            <p id="play_again">Play Again</p>
+            </div>
+          
+    </div>
+
+
+</body>
+
+</html>
