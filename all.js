@@ -115,6 +115,7 @@ $('document').ready(function(){
                 for(let j=0; j < size; j++) {
 
                     var y = document.createElement("INPUT");
+
                     y.setAttribute("type", "text");
                     y.setAttribute("maxlength", "1");
 
